@@ -7,6 +7,7 @@ export default function Home() {
       <Link to={href('/01')}>01 bottom search bar</Link>
       <Link to={href('/02')}>02 bottom sheet</Link>
       <Link to={href('/03')}>03 ice cream</Link>
+      <Link to={href('/04')}>04 svg</Link>
     </div>
   )
 }

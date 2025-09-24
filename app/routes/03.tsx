@@ -53,7 +53,7 @@ function Packaging({ name, color }: { name: string; color: string }) {
   const [isActive, setIsActive] = useState(false)
   return (
     <div
-      onClick={() => setIsActive(true)}
+      onMouseEnter={() => setIsActive(true)}
       className={`ice-cream z-1 absolute h-2/3 w-2/3 ${color} flex items-center justify-center ${isActive ? 'active' : ''}`}
     >
       <span className="rotate-270 tracking-widest text-3xl/snug">{name}</span>

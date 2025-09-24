@@ -5,4 +5,5 @@ export default [
   route('/01', 'routes/01.tsx'),
   route('/02', 'routes/02.tsx'),
   route('/03', 'routes/03.tsx'),
+  route('/04', 'routes/04.tsx'),
 ] satisfies RouteConfig
