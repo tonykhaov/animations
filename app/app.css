@@ -1,8 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
 }
 
 html,
@@ -11,5 +12,27 @@ body {
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+  }
+}
+
+.ice-cream.active {
+  animation: reveal-ice-cream 1s ease-in-out forwards;
+}
+
+@keyframes reveal-ice-cream {
+  0% {
+    transform: translateY(0);
+  }
+
+  10% {
+    transform: translateY(-16px);
+  }
+
+  90% {
+    transform: translateY(95%);
+  }
+
+  100% {
+    transform: translateY(90%);
   }
 }
