@@ -9,6 +9,7 @@ export default function Home() {
       <Link to={href('/03')}>03 ice cream</Link>
       <Link to={href('/04')}>04 svg</Link>
       <Link to={href('/05')}>05 phone</Link>
+      <Link to={href('/06')}>06 text hover slide in bold</Link>
     </div>
   )
 }
