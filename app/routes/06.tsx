@@ -1,10 +1,22 @@
+import * as React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 export default function Six() {
+  const [ready, setReady] = React.useState(false)
+
+  React.useEffect(() => {
+    const id = setTimeout(() => {
+      setReady(true)
+    }, 1000)
+
+    return () => clearTimeout(id)
+  }, [])
   return (
     <div className="flex h-screen w-screen justify-center items-center">
       <LinkWrapper>
-        <Link title="HOMEPAGE">HOMEPAGE</Link>
+        <Link data-ready={ready} title="HOMEPAGE">
+          HOMEPAGE
+        </Link>
       </LinkWrapper>
     </div>
   )
@@ -40,7 +52,7 @@ const LinkWrapper = styled.div`
   overflow: hidden;
   position: relative;
 
-  &:hover {
+  &:has([data-ready='true'])&:hover {
     ${Link} {
       transform: translateY(100%);
       transition: transform 0.4s ease-out;
