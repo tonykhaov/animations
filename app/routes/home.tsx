@@ -12,6 +12,7 @@ export default function Home() {
       <Link to={href('/06')}>06 text hover slide in bold</Link>
       <Link to={href('/07')}>07 clip path transition</Link>
       <Link to={href('/08')}>08 scroll animation</Link>
+      <Link to={href('/09')}>09 conic gradient animation</Link>
     </div>
   )
 }

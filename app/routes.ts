@@ -10,4 +10,5 @@ export default [
   route('/06', 'routes/06.tsx'),
   route('/07', 'routes/07.tsx'),
   route('/08', 'routes/08.tsx'),
+  route('/09', 'routes/09.tsx'),
 ] satisfies RouteConfig
