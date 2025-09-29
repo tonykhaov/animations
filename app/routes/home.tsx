@@ -11,6 +11,7 @@ export default function Home() {
       <Link to={href('/05')}>05 phone</Link>
       <Link to={href('/06')}>06 text hover slide in bold</Link>
       <Link to={href('/07')}>07 clip path transition</Link>
+      <Link to={href('/08')}>08 scroll animation</Link>
     </div>
   )
 }
