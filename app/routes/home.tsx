@@ -13,6 +13,7 @@ export default function Home() {
       <Link to={href('/07')}>07 clip path transition</Link>
       <Link to={href('/08')}>08 scroll animation</Link>
       <Link to={href('/09')}>09 conic gradient animation</Link>
+      <Link to={href('/10')}>10 magic wand 🪄</Link>
     </div>
   )
 }

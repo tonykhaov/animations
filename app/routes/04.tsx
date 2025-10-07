@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-export default function Four() {
+export default function Route() {
   const scene = React.useRef({
     svg: {
       width: 500,
@@ -58,6 +58,12 @@ export default function Four() {
         <g>
           <circle cx={scene.current.circle.cx} cy={scene.current.circle.cy} r={scene.current.circle.r} fill="red" />
         </g>
+        <defs>
+          <radialGradient id="myGradient">
+            <stop offset="10%" stop-color="gold" />
+            <stop offset="95%" stop-color="red" />
+          </radialGradient>
+        </defs>
       </Svg>
 
       <div className="mt-12" />
@@ -126,7 +132,7 @@ const Svg = styled.svg`
 
   circle {
     transform: translate(var(--x), var(--y));
-    fill: var(--color);
+    fill: url('#myGradient');
     transform-origin: center;
     transition:
       transform 100ms linear,
